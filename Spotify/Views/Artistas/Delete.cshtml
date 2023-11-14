@@ -1,0 +1,72 @@
+﻿@model Spotify.Models.Artista
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Artista</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeArtista)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeArtista)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImagemPerfil)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImagemPerfil)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataNasc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataNasc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Verificado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Verificado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Streams)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Streams)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
