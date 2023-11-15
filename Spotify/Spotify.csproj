@@ -148,6 +148,10 @@
     <Compile Include="Migrations\202311150930400_RelationsUpdateMigration.designer.cs">
       <DependentUpon>202311150930400_RelationsUpdateMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202311151248316_UpdatedMigration.cs" />
+    <Compile Include="Migrations\202311151248316_UpdatedMigration.designer.cs">
+      <DependentUpon>202311151248316_UpdatedMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Album.cs" />
     <Compile Include="Models\Artista.cs" />
@@ -266,6 +270,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202311150930400_RelationsUpdateMigration.resx">
       <DependentUpon>202311150930400_RelationsUpdateMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311151248316_UpdatedMigration.resx">
+      <DependentUpon>202311151248316_UpdatedMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

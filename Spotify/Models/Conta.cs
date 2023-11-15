@@ -25,7 +25,6 @@ namespace Spotify.Models {
         [Required]
         public DateTime DataNasc { get; set; }
 
-
         [Required]
         public string Descricao { get; set; }
     }
