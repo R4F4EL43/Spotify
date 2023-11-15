@@ -19,6 +19,6 @@ namespace Spotify.Database
             //this.Database.Connection.ConnectionString = "Server=SINF113\\SQLEXPRESS; Database=Projeto-Spotify; User Id=sa; Password=SQLEXPRESS_;";
         }
 
-
+        public System.Data.Entity.DbSet<Spotify.Models.Conta> Contas { get; set; }
     }
 }

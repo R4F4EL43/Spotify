@@ -13,22 +13,16 @@ namespace Spotify.Models
         public int IDArtista { get; set; }
 
         [Required]
-        public string NomeArtista { get; set; }
-
-        [Required]
-        public string ImagemPerfil { get; set; }
-
-        [Required]
-        public DateTime DataNasc { get; set; }
-
-        [Required]
-        public string Descricao { get; set; }
+        public string NomeArtistico { get; set; }
 
         [Required]
         public bool Verificado { get; set; }
 
         [Required]
         public int Streams { get; set; }
+
+        [Required]
+        public Conta Conta { get; set; }
 
         public ICollection<Album> Albuns { get; set; }
 
