@@ -11,107 +11,107 @@ using Spotify.Models;
 
 namespace Spotify.Controllers
 {
-    public class Musicas1Controller : Controller
+    public class ArtistasController : Controller
     {
         private SpotifyContext db = new SpotifyContext();
 
-        // GET: Musicas1
+        // GET: Artistas
         public ActionResult Index()
         {
-            return View(db.Musica.ToList());
+            return View(db.Artistas.ToList());
         }
 
-        // GET: Musicas1/Details/5
+        // GET: Artistas/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Musica musica = db.Musica.Find(id);
-            if (musica == null)
+            Artista artista = db.Artistas.Find(id);
+            if (artista == null)
             {
                 return HttpNotFound();
             }
-            return View(musica);
+            return View(artista);
         }
 
-        // GET: Musicas1/Create
+        // GET: Artistas/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Musicas1/Create
+        // POST: Artistas/Create
         // Para proteger-se contra ataques de excesso de postagem, ative as propriedades específicas às quais deseja se associar. 
         // Para obter mais detalhes, confira https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "IDMusica,NomeMusica,Letra,Duracao,ImageURL")] Musica musica)
+        public ActionResult Create([Bind(Include = "IDArtista,NomeArtistico,Verificado,Streams")] Artista artista)
         {
             if (ModelState.IsValid)
             {
-                db.Musica.Add(musica);
+                db.Artistas.Add(artista);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(musica);
+            return View(artista);
         }
 
-        // GET: Musicas1/Edit/5
+        // GET: Artistas/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Musica musica = db.Musica.Find(id);
-            if (musica == null)
+            Artista artista = db.Artistas.Find(id);
+            if (artista == null)
             {
                 return HttpNotFound();
             }
-            return View(musica);
+            return View(artista);
         }
 
-        // POST: Musicas1/Edit/5
+        // POST: Artistas/Edit/5
         // Para proteger-se contra ataques de excesso de postagem, ative as propriedades específicas às quais deseja se associar. 
         // Para obter mais detalhes, confira https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "IDMusica,NomeMusica,Letra,Duracao,ImageURL")] Musica musica)
+        public ActionResult Edit([Bind(Include = "IDArtista,NomeArtistico,Verificado,Streams")] Artista artista)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(musica).State = EntityState.Modified;
+                db.Entry(artista).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(musica);
+            return View(artista);
         }
 
-        // GET: Musicas1/Delete/5
+        // GET: Artistas/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Musica musica = db.Musica.Find(id);
-            if (musica == null)
+            Artista artista = db.Artistas.Find(id);
+            if (artista == null)
             {
                 return HttpNotFound();
             }
-            return View(musica);
+            return View(artista);
         }
 
-        // POST: Musicas1/Delete/5
+        // POST: Artistas/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Musica musica = db.Musica.Find(id);
-            db.Musica.Remove(musica);
+            Artista artista = db.Artistas.Find(id);
+            db.Artistas.Remove(artista);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
