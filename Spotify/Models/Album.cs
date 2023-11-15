@@ -13,6 +13,9 @@ namespace Spotify.Models
         [Key]
         public int IDAlbum { get; set; }
 
+
+        public Artista Artist { get; set; }
+
         [Required]
         public string NomeAlbum { get; set; }
 
@@ -23,13 +26,7 @@ namespace Spotify.Models
         public int Duraco { get; set; }
 
 
-        //[Key]
-        //[ForeignKey("IDMusica")]
-        //public ICollection<Musica> Musicas { get; set; }
-
-        //[Key]
-        //[ForeignKey("IDAlbum")]
-        //public ICollection<Album> Albuns { get; set; }
+        public ICollection<Musica> Musicas { get; set; }
 
     }
 }
