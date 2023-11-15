@@ -12,13 +12,10 @@ namespace Spotify.Models
         [Key]
         public int IDMusica { get; set; }
 
-        //[Key]
-        //[ForeignKey("IDArtista")]
-        //public int IDArtista { get; set; }
-
-        //[Key]
-        //[ForeignKey("IDMusica")]
-        //public int IDAlbum { get; set; }
+        [Required]
+        public Artista Artist { get; set; }
+        
+        public Album Album { get; set; }
 
         [Required]
         public string NomeMusica { get; set; }

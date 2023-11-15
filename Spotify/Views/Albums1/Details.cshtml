@@ -1,0 +1,42 @@
+﻿@model Spotify.Models.Album
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Album</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeAlbum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeAlbum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Duraco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Duraco)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDAlbum }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

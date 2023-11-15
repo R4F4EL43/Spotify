@@ -30,12 +30,8 @@ namespace Spotify.Models
         [Required]
         public int Streams { get; set; }
 
-        //[Key]
-        //[ForeignKey("IDAlbum")]
-        //public ICollection<Album> Albuns { get; set; }
+        public ICollection<Album> Albuns { get; set; }
 
-        //[Key]
-        //[ForeignKey("IDArtista")]
-        //public ICollection<Musica> Musicas { get; set; }
+        public ICollection<Musica> Musicas { get; set; }
     }
 }
