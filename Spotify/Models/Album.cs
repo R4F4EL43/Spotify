@@ -13,7 +13,6 @@ namespace Spotify.Models
         [Key]
         public int IDAlbum { get; set; }
 
-
         public Artista Artist { get; set; }
 
         [Required]
@@ -22,7 +21,6 @@ namespace Spotify.Models
         [Required]
         public string Descricao { get; set; }
 
-        [Required]
         public int Duraco { get; set; }
 
 
