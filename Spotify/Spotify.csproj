@@ -128,10 +128,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AlbunsController.cs" />
-    <Compile Include="Controllers\Artistas2Controller.cs" />
+    <Compile Include="Controllers\ArtistasController.cs" />
     <Compile Include="Controllers\ContasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\Musicas1Controller.cs" />
+    <Compile Include="Controllers\MusicasController.cs" />
     <Compile Include="Database\SpotifyContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -206,26 +206,26 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Musicas1\Create.cshtml" />
-    <Content Include="Views\Musicas1\Delete.cshtml" />
-    <Content Include="Views\Musicas1\Details.cshtml" />
-    <Content Include="Views\Musicas1\Edit.cshtml" />
-    <Content Include="Views\Musicas1\Index.cshtml" />
     <Content Include="Views\Contas\Create.cshtml" />
     <Content Include="Views\Contas\Delete.cshtml" />
     <Content Include="Views\Contas\Details.cshtml" />
     <Content Include="Views\Contas\Edit.cshtml" />
     <Content Include="Views\Contas\Index.cshtml" />
-    <Content Include="Views\Artistas2\Create.cshtml" />
-    <Content Include="Views\Artistas2\Delete.cshtml" />
-    <Content Include="Views\Artistas2\Details.cshtml" />
-    <Content Include="Views\Artistas2\Edit.cshtml" />
-    <Content Include="Views\Artistas2\Index.cshtml" />
     <Content Include="Views\Albuns\Create.cshtml" />
     <Content Include="Views\Albuns\Delete.cshtml" />
     <Content Include="Views\Albuns\Details.cshtml" />
     <Content Include="Views\Albuns\Edit.cshtml" />
     <Content Include="Views\Albuns\Index.cshtml" />
+    <Content Include="Views\Artistas\Create.cshtml" />
+    <Content Include="Views\Artistas\Delete.cshtml" />
+    <Content Include="Views\Artistas\Details.cshtml" />
+    <Content Include="Views\Artistas\Edit.cshtml" />
+    <Content Include="Views\Artistas\Index.cshtml" />
+    <Content Include="Views\Musicas\Create.cshtml" />
+    <Content Include="Views\Musicas\Delete.cshtml" />
+    <Content Include="Views\Musicas\Details.cshtml" />
+    <Content Include="Views\Musicas\Edit.cshtml" />
+    <Content Include="Views\Musicas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
