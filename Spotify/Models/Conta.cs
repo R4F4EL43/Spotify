@@ -19,13 +19,11 @@ namespace Spotify.Models {
         [Required]
         public string Password { get; set; }
 
-        [Required]
-        public string ImagemPerfil { get; set; }
+        public string ImagemPerfil { get; set; } = "https://cdn-icons-png.flaticon.com/512/17/17004.png";
 
         [Required]
         public DateTime DataNasc { get; set; }
 
-        [Required]
-        public string Descricao { get; set; }
+        public string Descricao { get; set; } = "";
     }
 }
